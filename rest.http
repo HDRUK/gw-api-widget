@@ -1,0 +1,4 @@
+### Gateway Widget
+GET http://localhost:3004/api/v1/data?search=&datasetpublisher=SAIL&tab=Datasets&maxResults=2
+Content-Type: application/json
+Accept: application/json
