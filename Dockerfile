@@ -8,6 +8,6 @@ RUN npm install && npm cache clean --force
 
 COPY . .
 
-EXPOSE 3002
+EXPOSE 3004
 
 CMD ["npm", "run", "build:start"]
