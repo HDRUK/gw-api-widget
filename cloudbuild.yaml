@@ -9,4 +9,5 @@ steps:
   - --source=cloud_function
   - --trigger-http
   - --runtime=Python 3.7
-
+options:
+  logging: CLOUD_LOGGING_ONLY
