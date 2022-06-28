@@ -1,0 +1,11 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - data-transfer-datausewidget-${_ENVIRONMENT}
+  - --region=europe-west1
+  - --source=cloud_function
+  - --trigger-http
+  - --runtime=Python 3.7
