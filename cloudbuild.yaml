@@ -8,6 +8,6 @@ steps:
   - --region=europe-west1
   - --source=cloud_function
   - --trigger-http
-  - --runtime=Python 3.7
+  - --runtime=Python37
 options:
   logging: CLOUD_LOGGING_ONLY
