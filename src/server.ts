@@ -10,7 +10,7 @@ import router from './api/v1/routes/routes';
 
 const app = express();
 
-const PORT = process.env.PORT || 3004;
+const PORT = process.env.PORT || 8080;
 const HOST = process.env.HOST || '';
 
 const cache = apicache.middleware;
