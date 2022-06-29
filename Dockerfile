@@ -4,10 +4,8 @@ WORKDIR /var/www
 
 COPY package*.json ./
 
-RUN npm install && npm cache clean --force
+RUN npm install
 
-COPY . .
-
-EXPOSE 3004
+COPY . ./
 
 CMD ["npm", "run", "build:start"]
