@@ -1,3 +1,0 @@
-gcloud 
-google-cloud-storage
-google.cloud
