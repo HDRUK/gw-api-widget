@@ -1,0 +1,16 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  id: 'Deploy Cloud Function'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - '${_ENVIRONMENT}-datause-widget',
+  - --region=europe-west2
+  - --source=https://source.developers.google.com/projects/hdruk-gateway/repos/hdruk-gateway_datause_widget_function/moveable-aliases/master/paths/
+  - --trigger-http
+  - --runtime=python37
+  - --allow-unauthenticated
+  - --entry-point=upload_to_bucket
+  env:
+    - 'ENV=$_ENV'
