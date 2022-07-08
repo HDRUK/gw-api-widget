@@ -13,4 +13,4 @@ steps:
   - --allow-unauthenticated
   - --entry-point=upload_to_bucket
   env:
-    - 'ENV=$_ENV'
+    - '_ENV=$_ENV'
