@@ -5,7 +5,7 @@ steps:
   - gcloud
   - functions
   - deploy
-  - '${_ENV}-datause-widget'
+  - 'dev-datause-widget'
   - --region=europe-west2
   - --source=https://source.developers.google.com/projects/hdruk-gateway-dev/repos/hdruk-gateway_datause_widget_function/moveable-aliases/master/paths/dev/
   - --trigger-http
