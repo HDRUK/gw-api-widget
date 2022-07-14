@@ -1,0 +1,9 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  id: 'Deploy Cloud Function'
+  args:
+  - gcloud
+  - functions
+  - call
+  - uat-datause-widget
+  - --region=europe-west2
