@@ -4,13 +4,7 @@ steps:
   args:
   - gcloud
   - functions
-  - deploy
-  - 'dev-datause-widget'
+  - call
+  - dev-datause-widget
   - --region=europe-west2
-  - --source=https://source.developers.google.com/projects/hdruk-gateway-dev/repos/hdruk-gateway_datause_widget_function/moveable-aliases/master/paths/dev/
-  - --trigger-http
-  - --runtime=python37
-  - --allow-unauthenticated
-  - --entry-point=upload_to_bucket
-  env:
-    - '_ENV=$_ENV'
+
