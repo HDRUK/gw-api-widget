@@ -35,7 +35,7 @@ class WidgetController extends BaseController {
             });
         }
 
-        res.status(200).json(JSON.parse(JSON.stringify(response.data)));
+        res.status(200).send(response.data);
     }
 }
 
