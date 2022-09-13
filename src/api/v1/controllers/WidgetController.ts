@@ -20,7 +20,7 @@ class WidgetController extends BaseController {
             'INFO',
         );
 
-        const response = await this._httpClient.get(urlPath);
+        const response = await this._httpClient.get(req, urlPath);
 
         if (JSON.stringify(response.data) === undefined) {
             this._logger.sendDataInLogging(
@@ -35,7 +35,7 @@ class WidgetController extends BaseController {
             });
         }
 
-        res.status(200).json(JSON.parse(JSON.stringify(response.data)));
+        res.status(200).send(response.data);
     }
 }
 

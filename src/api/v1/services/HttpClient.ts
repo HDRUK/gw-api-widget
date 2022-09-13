@@ -1,17 +1,18 @@
+import {Request} from 'express';
 import axios, { AxiosRequestConfig } from 'axios';
 
 export default class HttpClient {
-    async get(url: string) {
+    async get(req: Request, url: string) {
         const config: AxiosRequestConfig = {
+            // responseType: 'stream',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'content-Type': 'application/json',
             }
         };
 
         try {
-            const response = await axios.get(url, config);
-            return response;
+            return await axios.get(url, config);
         } catch (error) {
             return error;
         }
