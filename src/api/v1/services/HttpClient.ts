@@ -1,8 +1,7 @@
-import {Request} from 'express';
 import axios, { AxiosRequestConfig } from 'axios';
 
 export default class HttpClient {
-    async get(req: Request, url: string) {
+    async get(url: string) {
         const config: AxiosRequestConfig = {
             // responseType: 'stream',
             headers: {
